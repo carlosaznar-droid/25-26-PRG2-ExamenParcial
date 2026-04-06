@@ -1,24 +1,22 @@
 class Gimnasio {
 
-    class Gimnasio {
+private String NombreGimnasio = "FitLifeCenter";
 
-private string NombreGimnasio ("FitLifeCenter"){}
+private String[] Actividad = {"yoga","spinning","pilates","aquagym"};
 
-private string Actividad ("yoga","spinnig","pilates","aquagym"){}
+private String[] Socios = {"Juan Garcia","Gustavo Fring","Maria Lopez","Saul Perez"};
 
-private string Socios ("Juan Garcia","Gustavo Fring","Maria Lopez","Saul Perez"){}
+private String[] Monitores = {"Carlos Lopez","Maria Martinez","Ana Sobremazas","Carmen Santamaria"};
 
-private string Monitores ("Carlos Lopez","Maria Martinez","Ana Sobremazas","Carmen Santamaria"){}
+private String[] DNI = {"12345678A","87654321B","79189017K","11223344C"};
 
-private string DNI ("12345678A","87654321B","79189017K","11223344C"){}
+private double[] Aforo = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
 
-private double Aforo (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20){}
+private String[] Fechas = {"Lunes/Viernes","Martes/Jueves","Miercoles","Miercoles/Viernes"};
 
-private string Fechas ("Lunes/Viernes","Martes/Jueves","Miercoles","Miércoles/Viernes"){}
+private boolean[] EstadoSuscripcion = {true, false};
 
-private boolean EstadoSuscripcion (Activo/inactivo){}
-
-private string Motivo (/…){}
+private String Motivo = "...";
 
         public void Actividad(String Actividad, String Monitores, String Fechas, int[] Aforo) {
             System.out.println("[INFO] Clase de " + Actividad + " programada para los " + Fechas + ".");
@@ -33,14 +31,14 @@ private string Motivo (/…){}
             }
         }
 
-public void reservas (Socios,Actividad)
+public void reservas(String Socios, String Actividad) {}
 
-public void CancelarReserva (Socio,Actividad,Motivo)
+public void CancelarReserva(String Socio, String Actividad, String Motivo) {}
 
-public Gimnasio (string NombreGimnasio, int[] Aforo) {
+public Gimnasio(String NombreGimnasio, int[] Aforo) {
   System.out.println(" Gimnasio '" + NombreGimnasio + "' abierto. Aforo maximo: " + Aforo.length + " personas.");
     }
 
-public void Monitor (Monitor,Actividad)
+public void Monitor(String Monitor, String Actividad) {}
 
-public void EstadoReserva (Socio,Actividad,EstadoReserva)
+public void EstadoReserva(String Socio, String Actividad, boolean EstadoReserva) {}
