@@ -35,7 +35,7 @@ class Gimnasio {
 
     public void CancelarReserva(String Socio, String Actividad, String Motivo) {
         if (reservasActuales > 0) {
-            reservasActuales--; 
+            reservasActuales--;
             System.out.println(" CANCELACIoN: " + Socio + " se dio de baja de " + Actividad + ".");
             System.out.println("   Motivo: " + Motivo);
         } else {
@@ -48,6 +48,7 @@ class Gimnasio {
     }
 
     public void Monitor(String Monitor, String Actividad) {
+        System.out.println("[PERSONAL] El monitor " + Monitor + " ha fichado para dar " + Actividad + ".");
     }
 
 public void EstadoReserva(String Socio, String Actividad, boolean EstadoReserva) {}
