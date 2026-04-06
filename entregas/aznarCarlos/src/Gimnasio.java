@@ -10,16 +10,16 @@ private string Fechas ("Lunes/Viernes","Martes/Jueves","Miercoles","Miércoles/V
 private boolean EstadoSuscripcion (Activo/inactivo){}
 private string Motivo (/…){}
 
-public Actividad (Actividad,Monitores,Fechas,Aforo)
+public void Actividad (Actividad,Monitores,Fechas,Aforo)
 
-public Socios (Socios,DNI,EstadoSuscripcion)
+public void  Socios (Socios,DNI,EstadoSuscripcion)
 
-public reservas (Socios,Actividad)
+public void reservas (Socios,Actividad)
 
-public CancelarReserva (Socio,Actividad,Motivo)
+public void CancelarReserva (Socio,Actividad,Motivo)
 
-public Gimnasio (NombreGimnasio,Aforo)
+public void Gimnasio (NombreGimnasio,Aforo)
 
-public Monitor (Monitor,Actividad)
+public void onitor (Monitor,Actividad)
 
-public EstadoReserva (Socio,Actividad,EstadoReserva)
+public void EstadoReserva (Socio,Actividad,EstadoReserva)
