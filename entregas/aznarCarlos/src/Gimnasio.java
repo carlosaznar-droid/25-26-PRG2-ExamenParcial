@@ -18,8 +18,9 @@ public void reservas (Socios,Actividad)
 
 public void CancelarReserva (Socio,Actividad,Motivo)
 
-public void Gimnasio (NombreGimnasio,Aforo)
-
-public void onitor (Monitor,Actividad)
+public Gimnasio(string NombreGimnasio, int[] Aforo) {
+  System.out.println(" Gimnasio '" + NombreGimnasio + "' abierto. Aforo máximo: " + Aforo.length + " personas.");
+    }
+public void Monitor (Monitor,Actividad)
 
 public void EstadoReserva (Socio,Actividad,EstadoReserva)
