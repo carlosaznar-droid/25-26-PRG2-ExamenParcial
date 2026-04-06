@@ -26,14 +26,21 @@ class Gimnasio {
 
         if (reservasActuales < listaAforo.length) {
             reservasActuales++;
-            System.out.println(" RESERVA OK: " + Socios + " se ha apuntado a " + Actividad + ".");
+            System.out.println(" RESERVA OK-> " + Socios + " se ha apuntado a " + Actividad + ".");
             System.out.println("   (Plazas ocupadas: " + reservasActuales + " de " + listaAforo.length + ")");
         } else {
-            System.out.println(" ERROR: No hay plazas para " + Actividad + ". Aforo completo.");
+            System.out.println(" ERROR-> No hay plazas para " + Actividad + ". Aforo completo.");
         }
     }
 
     public void CancelarReserva(String Socio, String Actividad, String Motivo) {
+        if (reservasActuales > 0) {
+            reservasActuales--; 
+            System.out.println(" CANCELACIoN: " + Socio + " se dio de baja de " + Actividad + ".");
+            System.out.println("   Motivo: " + Motivo);
+        } else {
+            System.out.println("No hay ninguna reserva activa no podemos cancelar ");
+        }
     }
 
     public Gimnasio(String NombreGimnasio, int[] Aforo) {
