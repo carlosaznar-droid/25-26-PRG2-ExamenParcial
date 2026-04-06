@@ -25,14 +25,20 @@ private string Motivo (/…){}
             System.out.println("       Monitor asignado: " + Monitores + ".");
         }
 
-public void  Socios (Socios,DNI,EstadoSuscripcion)
+        public void Socios(String Socios, String DNI, boolean EstadoSuscripcion) {
+            if (EstadoSuscripcion == true) {
+                System.out.println("[SOCIO] " + Socios + " (DNI: " + DNI + ") esta ACTIVO. Puede entrar.");
+            } else {
+                System.out.println("[SOCIO] " + Socios + " (DNI: " + DNI + ") esta INACTIVO. Acceso denegado.");
+            }
+        }
 
 public void reservas (Socios,Actividad)
 
 public void CancelarReserva (Socio,Actividad,Motivo)
 
 public Gimnasio (string NombreGimnasio, int[] Aforo) {
-  System.out.println(" Gimnasio '" + NombreGimnasio + "' abierto. Aforo máximo: " + Aforo.length + " personas.");
+  System.out.println(" Gimnasio '" + NombreGimnasio + "' abierto. Aforo maximo: " + Aforo.length + " personas.");
     }
 
 public void Monitor (Monitor,Actividad)
