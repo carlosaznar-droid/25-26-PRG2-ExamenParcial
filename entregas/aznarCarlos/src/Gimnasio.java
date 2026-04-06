@@ -59,7 +59,7 @@ class Gimnasio {
     }
 
     public void EstadoReserva(String Socio, String Actividad, String EstadoReserva) {
-        System.out.println("La reserva de " + Socio + " está: " + EstadoReserva);
+        System.out.println("La reserva de " + Socio + " esta: " + EstadoReserva);
     }
 
     public static void main(String[] args) {
@@ -80,6 +80,6 @@ class Gimnasio {
         miGimnasio.reservas("Gustavo Fring", "yoga");
         
         System.out.println("---");
-        miGimnasio.CancelarReserva("Gustavo Fring", "yoga", "Reunión urgente");
+        miGimnasio.CancelarReserva("Gustavo Fring", "yoga", "Reunion urgente");
     }
 }
