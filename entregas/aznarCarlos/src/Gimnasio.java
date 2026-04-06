@@ -51,4 +51,7 @@ class Gimnasio {
         System.out.println("[PERSONAL] El monitor " + Monitor + " ha fichado para dar " + Actividad + ".");
     }
 
-public void EstadoReserva(String Socio, String Actividad, boolean EstadoReserva) {}
+public void EstadoReserva(String Socio, String Actividad, String EstadoReserva) {
+        System.out.println("[CONSULTA] La reserva de " + Socio + " para la clase de " + Actividad + " esta: " + EstadoReserva.toUpperCase());
+    }
+}
